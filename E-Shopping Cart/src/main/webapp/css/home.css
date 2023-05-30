@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial;
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+/* Head/Blog Title */
+.header {
+	padding: 30px;
+	text-align: center;
+	background: white;
+	
+}
+
+.header h1 {
+	font-size: 50px;
+}
+
+#welcome {
+	color: #228be6;
+	
+}
+
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #343a40;
+	margin-left: -0.7rem;
+	margin-right: -0.7rem;
+}
+
+.form-control {
+	position: relative;
+}
+
+#btn-search {
+	width: 5%;
+	background-color: #f59f00;
+	color: white;
+	border: none;
+	position: absolute;
+	right: 2rem;
+}
+
+
+/* Style the topnav links */
+.topnav a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#home {
+	color: #e8590c;
+	margin-left: 25%;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/* clear floats after the column */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+
+
+
+/* NEW BODY  */
+.card {
+	padding: 1rem;
+}
+
+#upper-footer {
+	background-color: #495057;
+	padding: 25px;
+	border-top-style: solid;
+	border-top-color: #ff922b;
+}
+
+#bottem-footer {
+	background-color: #343a40;
+	color: #ff922b;
+	text-align: center;
+	padding: 1rem;
+}
+
+#bottem-footer a{
+	color: #ff922b;
+	text-decoration: none;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the 2 columns stack on top
+of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+	width: 100px;
+	padding: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack
+on top of each other instead of next to each other */
+@media screen and (max-width: 400px){
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+

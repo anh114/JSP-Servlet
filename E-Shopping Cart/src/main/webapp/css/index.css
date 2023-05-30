@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+	list-style: none;
+	
+}
+
+body{
+	font-family: Arial;
+	padding: 10px;
+	background: #042331;
+	
+}
+
+
+
+.hero {
+	height: 40vh;
+	width: 80%;
+	display: block;
+	position: relative;
+	float: right;
+}
+
+
+.hero a{
+	color: white;
+	position: absolute;
+	right: 15px;
+	text-decoration: none;
+	padding: 8px 12px;
+	
+}
+
+.hero a:hover {
+	background-color: #9c36b5;
+	border-radius: 15px;
+	
+}
+#banner {
+	width : 100%;
+	height: 400px;
+	
+}
+
+
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background-color: #2F3F53;
+	
+}
+
+
+.sidebar header {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	line-height: 70px; 
+	color: #f76707;
+	user-select: none;
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+		
+}
+
+ul li:hover a{
+	padding-left: 30px;
+	background-color: #9c36b5;
+}
+
+.sidebar ul a i {
+	margin-right: 16px;
+}
+
+
+
+
+#members {
+	padding: 15px 20px;
+	background-color: #9c36b5;
+	color: white;
+	font-size: 20px;
+	width: 70%;
+	margin-top: 40px;
+	
+}
+
+
+.table {
+
+	background-color: #2F3F53;
+	color: #868e96;
+	line-height: 40px;
+	width: 70%;
+	position: absolute;
+	top: 110px;
+
+	
+}
+
+.table thead {
+	height: 60px;
+}
+
+.member-info {
+	width: 80%;
+	float: right;
+	display: block;
+	position: relative;
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the 2 columns stack on top
+of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+	width: 100px;
+	padding: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack
+on top of each other instead of next to each other */
+@media screen and (max-width: 400px){
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+
